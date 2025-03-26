@@ -1,0 +1,136 @@
+/* 🎯 Global Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* 🎯 Body Styling - Centering Form & Background */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(315deg, #ec6f6a 0%, #5ecbb6 74%);
+}
+
+/* 🎯 Wrapper - Main Container */
+.wrapper {
+  width: 440px;
+  background-color: #52597c;
+  box-shadow: 0 0 10px #000;
+}
+
+/* 🎯 Form Styling */
+form {
+  padding: 40px;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* 🎯 Form Title */
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* 🎯 Input Fields Container */
+.form-box {
+  margin-bottom: 15px;
+}
+
+/* 🎯 Label Styling */
+.form-box label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+/* 🎯 Input Fields */
+.form-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 5px;
+}
+
+/* 🎯 Error Styling */
+.form-box.error input {
+  border: 1px solid #ec6f6a;
+  background-color: rgb(255, 255, 255);
+}
+
+/* 🎯 Error Messages */
+.form-box .error-text {
+  margin: 5px 0 0 10px;
+  font-size: 14px;
+  color: #ec6f6a;
+  visibility: hidden;
+}
+
+.form-box.error .error-text {
+  visibility: visible;
+}
+
+/* 🎯 Control Buttons */
+.control-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* 🎯 Submit & Reset Buttons */
+.send,
+.clear,
+.close {
+  display: block;
+  padding: 10px 0;
+  margin-left: 10px;
+  width: 100px;
+  font-size: 18px;
+  background-color: #76b1bc;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.send:hover,
+.clear:hover,
+.close:hover {
+  background-color: #5ecbb6;
+}
+
+/* 🎯 Popup Message */
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: -300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 200px;
+  background-color: #52597c;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  transition: top 0.5s;
+}
+
+/* 🎯 Popup Text */
+.popup p {
+  font-size: 28px;
+}
+
+/* 🎯 Close Button in Popup */
+.popup .close {
+  margin-top: 20px;
+}
+
+/* 🎯 Show Popup Animation */
+.show-popup {
+  top: 150px;
+}
