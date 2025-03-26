@@ -37,7 +37,7 @@ To run the project locally:
 1️⃣ Clone the repository using Git:
 
 ```bash
-git clone https://github.com/PrzemekJaworski/FormValidator.git
+git clone https://github.com/PrzemekJaworski/Walidator-Formularza.git
 ```
 
 2️⃣ Navigate to the project folder:
